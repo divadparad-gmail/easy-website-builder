@@ -9,6 +9,7 @@ import StepCTA from './components/StepCTA';
 import PromptOutput from './components/PromptOutput';
 import CTAFooter from './components/CTAFooter';
 import ScrollSpy from './components/ScrollSpy';
+import ThemeToggle from './components/ThemeToggle';
 import { defaultSections, styleOptions } from './data/constants';
 import { generatePrompt } from './utils/promptGenerator';
 
@@ -46,7 +47,8 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center py-12 px-4 md:px-0">
+    <div className="min-h-screen flex flex-col items-center py-12 px-4 md:px-0 transition-colors duration-500">
+      <ThemeToggle />
       <ScrollSpy />
 
       <HeroHeader />
