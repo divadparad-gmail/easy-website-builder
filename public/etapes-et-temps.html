@@ -29,6 +29,8 @@
             -webkit-text-fill-color: transparent;
         }
         .table-row-hover:hover { background-color: #f8fafc; transition: background-color 0.2s; }
+        /* Permettre le retour à la ligne pour les textes longs */
+        .wrap-text { white-space: normal !important; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -87,27 +89,29 @@
                     <tbody class="bg-white divide-y divide-gray-200">
                         <tr class="table-row-hover">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Phase 0</td>
-                            <td class="px-6 py-4 text-sm text-gray-700">1. Ouverture de Stitch<br>2. Sélection du mode Web</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text">1. <strong>Ouverture de Stitch</strong><br>2. <strong>Sélection du mode Web</strong></td>
                             <td class="px-6 py-4 text-sm text-gray-400 italic">(Aucune action)</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">10 secs</td>
                         </tr>
                         <tr class="table-row-hover">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">1. Initialisation</td>
-                            <td class="px-6 py-4 text-sm text-gray-700 bg-gray-50 rounded-lg m-2 font-mono text-xs border border-gray-100">"Reproduite À L'IDENTIQUE ce site web : https://easywebsitebuilder.tech/"</td>
-                            <td class="px-6 py-4 text-sm text-gray-600">
-                                <ul class="list-disc list-inside space-y-1">
-                                    <li>Analyse Structurelle et Sémantique (Analyse Visuelle).</li>
-                                    <li>Extraction du Design System.</li>
-                                    <li>Adaptation aux Standards UX Desktop.</li>
-                                    <li>Traduction en Instructions de Génération.</li>
-                                    <li>Génération du design en respectant l'identité.</li>
-                                </ul>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text">
+                                <div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">
+                                    "Reproduite À L'IDENTIQUE ce site web : <a href="https://easywebsitebuilder.tech/" class="text-blue-600 hover:underline" target="_blank">https://easywebsitebuilder.tech/</a>"
+                                </div>
+                            </td>
+                            <td class="px-6 py-4 text-sm text-gray-600 wrap-text">
+                                1. <strong>Analyse Structurelle et Sémantique (Analyse Visuelle).</strong><br>
+                                2. <strong>Extraction du Design System.</strong><br>
+                                3. <strong>Adaptation aux Standards UX Desktop.</strong><br>
+                                4. <strong>Traduction en Instructions de Génération.</strong><br>
+                                5. <strong>Génération du design en respectant l'identité de la marque.</strong>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">30 secs</td>
                         </tr>
                         <tr class="table-row-hover">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">2. Exportation</td>
-                            <td class="px-6 py-4 text-sm text-gray-700">J'exporte en fichier .zip et l'extrait dans mon projet d'Antigravity</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text"><strong>J'exporte en fichier .zip et l'extrait dans mon projet d'Antigravity</strong></td>
                             <td class="px-6 py-4 text-sm text-gray-400 italic">(Aucune action)</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">15 secs</td>
                         </tr>
@@ -147,67 +151,70 @@
                         <!-- Phase 0 -->
                         <tr class="table-row-hover">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Phase 0</td>
-                            <td class="px-6 py-4 text-sm text-gray-700">1. Ouverture d'Antigravity<br>2. Ouverture dossier vide<br>3. Import code.html + screen.png</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text">1. <strong>Ouverture d'Antigravity</strong><br>2. <strong>Ouverture d'un dossier vide</strong><br>3. <strong>Copie-colle les fichiers "code.html" et "screen.png" dans le dossier (étape 2 de Stitch)</strong></td>
                             <td class="px-6 py-4 text-sm text-gray-400 italic">(Aucune action)</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">10 secs</td>
                         </tr>
                         <!-- Phase 1 -->
                         <tr class="table-row-hover">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">1. Initialisation</td>
-                            <td class="px-6 py-4 text-sm text-gray-700"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"J'ai importé du code html... Fais-en une application... Utilise cette compétence @add-skill-ui-ux-pro-max.md"</div></td>
-                            <td class="px-6 py-4 text-sm text-gray-600">1. Analyse HTML + Screen<br>2. Exécution workflow UI/UX<br>3. Définition Design System</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"J'ai importé du code html d'une page web. Fais-en une application. Je veux pouvoir l'ouvrir en local host. Utilise cette compétence @add-skill-ui-ux-pro-max.md"</div></td>
+                            <td class="px-6 py-4 text-sm text-gray-600 wrap-text">1. <strong>Analyse du HTML + Screen</strong><br>2. <strong>Exécution du workflow UI/UX</strong><br>3. <strong>Définition du Design System</strong></td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">3 min</td>
                         </tr>
                         <!-- Phase 2 -->
                         <tr class="table-row-hover">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">2. Archi & Code</td>
-                            <td class="px-6 py-4 text-sm text-gray-400 italic">(Attente)</td>
-                            <td class="px-6 py-4 text-sm text-gray-600">1. <strong>Scaffolding</strong> (Vite/React)<br>2. <strong>Développement</strong> (Composants, Logique, Drag & Drop)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">2. Architecture & Code</td>
+                            <td class="px-6 py-4 text-sm text-gray-400 italic">(Aucune action de ta part, j'attends)</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 wrap-text">1. <strong>Scaffolding</strong> (Création projet Vite/React).<br>2. <strong>Développement</strong> (Création des composants, logique React, Drag & Drop).</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">9 min</td>
                         </tr>
                         <!-- Phase 3 -->
                         <tr class="table-row-hover">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">3. Validation</td>
-                            <td class="px-6 py-4 text-sm text-gray-400 italic">(Attente)</td>
-                            <td class="px-6 py-4 text-sm text-gray-600">Lancement navigateur interne, tests fonctionnels, validation absence d'erreurs.</td>
+                            <td class="px-6 py-4 text-sm text-gray-400 italic">(j'attends toujours)</td>
+                            <td class="px-6 py-4 text-sm text-gray-600 wrap-text">Lancement du navigateur interne pour tester l'app, cliquer sur les boutons et valider l'absence d'erreurs.</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">3 min</td>
                         </tr>
                         <!-- Phase 4 -->
                         <tr class="table-row-hover">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">4. Ajustements UI</td>
-                            <td class="px-6 py-4 text-sm text-gray-700"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Mets à jour la couleur du titre, des boutons et du footer..."</div></td>
-                            <td class="px-6 py-4 text-sm text-gray-600">Modifications Tailwind (gradients, hover states).</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Mets à jour la couleur du titre, des boutons et du footer..."</div></td>
+                            <td class="px-6 py-4 text-sm text-gray-600 wrap-text">Multiples modifications du code Tailwind pour ajuster les dégradés (gradients) et les états au survol.</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">~25 min</td>
                         </tr>
                         <!-- Phase 5 -->
                         <tr class="table-row-hover">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">5. Personnalisation</td>
-                            <td class="px-6 py-4 text-sm text-gray-700"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Change Jack pour David, mets ma photo et traduis le site au complet en FR"</div></td>
-                            <td class="px-6 py-4 text-sm text-gray-600">Remplacement assets (images) et traduction intégrale (i18n/texte).</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Change Jack pour David, mets ma photo et traduis le site au complet en FR"</div></td>
+                            <td class="px-6 py-4 text-sm text-gray-600 wrap-text">Remplacement de la source de l'image, ajustement des textes en français dans tout le code.</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">~20 min</td>
                         </tr>
                         <!-- Phase 6 -->
                         <tr class="table-row-hover">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">6. Push GitHub</td>
-                            <td class="px-6 py-4 text-sm text-gray-700"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Initialise un repo Git... crée dépôt privé 'easy-website-builder'... pousse sur main"</div></td>
-                            <td class="px-6 py-4 text-sm text-gray-600">
-                                <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-gray-100 text-gray-800">API GitHub</span>
-                                <br>git init, .gitignore, architecture, création repo, premier commit & push.
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">6. Push sur GitHub</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Initialise un repo Git pour ce projet, crée un dépôt privé sur mon GitHub nommé `easy-website-builder` et pousse tout le code actuel sur la branche `main`."</div></td>
+                            <td class="px-6 py-4 text-sm text-gray-600 wrap-text">
+                                1. <strong>Gère le `git init`</strong> <strong>et le</strong> `.gitignore`<br>
+                                2. <strong>Création de l'architecture la plus adaptée</strong><br>
+                                3. <strong>Se connecte à l'API GitHub via le serveur MCP</strong><br>
+                                4. <strong>Crée le repo</strong><br>
+                                5. <strong>Fait le premier commit et le `git push`</strong>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">1 min</td>
                         </tr>
                         <!-- Phase 7 -->
                         <tr class="table-row-hover">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">7. App Coolify</td>
-                            <td class="px-6 py-4 text-sm text-gray-700"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Utilise Coolify... Crée nouvelle app liée au dépôt GitHub... Expose port 5173... nixpacks"</div></td>
-                            <td class="px-6 py-4 text-sm text-gray-600">Traduction intention métier &rarr; Appels API complexes vers l'infra Coolify (Provisioning VPS).</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">7. Création de l'App sur Coolify</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Utilise Coolify (Server UUID: xxx, Project UUID: yyy). Crée une nouvelle application liée au dépôt GitHub que nous venons de créer. Expose le port 5173 et utilise le paramètre nixpacks."</div></td>
+                            <td class="px-6 py-4 text-sm text-gray-600 wrap-text">L'agent traduit une intention métier ("crée une app liée à github") en une série d'appels API ou d'interactions MCP complexes vers l'infrastructure de Coolify pour provisionner numériquement le projet sur ton VPS.</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">~3 min</td>
                         </tr>
                         <!-- Phase 8 -->
                         <tr class="table-row-hover">
-                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">8. Déploiement VPS</td>
-                            <td class="px-6 py-4 text-sm text-gray-700"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Assigne le nom de domaine... lance un déploiement forcé... Surveille les statuts"</div></td>
-                            <td class="px-6 py-4 text-sm text-gray-600">Injection domaine (FQDN), Build container, SSL Traefik, Polling API jusqu'au statut <span class="font-mono text-xs bg-green-100 text-green-800 px-1 rounded">finished</span>.</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">8. Déploiement sur VPS Hostinger</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Assigne le nom de domaine `builder.mondomaine.com` à cette application sur Coolify, puis lance un déploiement forcé. Surveille les statuts et dis-moi quand le domaine est accessible."</div></td>
+                            <td class="px-6 py-4 text-sm text-gray-600 wrap-text">C'est une commande multi-étapes. L'agent injecte d'abord le domaine (FQDN), déclenche l'action de déploiement (build du conteneur, certs SSL via Traefik), puis agit comme un moniteur en "pollant" (vérifiant) l'état de l'API Coolify jusqu'à ce que le statut passe à `finished` avant de te confirmer que tout est en ligne.</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">~4 min</td>
                         </tr>
                     </tbody>
@@ -228,7 +235,7 @@
                     <i class="fa-solid fa-wand-magic-sparkles"></i>
                 </div>
                 <div>
-                    <h2 class="text-xl font-bold text-gray-900">Application - Nano Banana (Gemini)</h2>
+                    <h2 class="text-xl font-bold text-gray-900">Application - Nano banana (Gemini)</h2>
                     <p class="text-sm text-gray-500">Création d'actifs graphiques</p>
                 </div>
             </div>
@@ -245,26 +252,26 @@
                     <tbody class="bg-white divide-y divide-gray-200">
                         <tr class="table-row-hover">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">Phase 0</td>
-                            <td class="px-6 py-4 text-sm text-gray-700">1. Trouver une photo de moi</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text">1. <strong>Trouver une photo de moi</strong></td>
                             <td class="px-6 py-4 text-sm text-gray-400 italic">(Aucune action)</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">2 min</td>
                         </tr>
                         <tr class="table-row-hover">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">1. Initialisation</td>
-                            <td class="px-6 py-4 text-sm text-gray-700"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Crée un avatar circulaire premium... portrait numérique propre... anneau néon violet... fond noir uni... 1024x1024"</div></td>
-                            <td class="px-6 py-4 text-sm text-gray-600">1. Génération de la photo (Traitement image + prompt).</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text"><div class="bg-gray-50 p-2 rounded border border-gray-100 font-mono text-xs">"Crée un avatar circulaire premium. Place mon visage au centre (style portrait numérique propre et stylisé). prends mon visage en pj avec mon bandeau bleu.<br>Le portrait est à l'intérieur d'un cercle blanc, lui-même entouré d'un anneau néon violet brillant. Le tout sur un fond noir uni et profond. Look minimaliste, technologique et professionnel.<br>format Carré (Ratio 1:1), 1024 x 1024 pixels"</div></td>
+                            <td class="px-6 py-4 text-sm text-gray-600 wrap-text">1. <strong>Génération de la photo</strong></td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">1 min</td>
                         </tr>
                         <tr class="table-row-hover">
                             <td class="px-6 py-4 whitespace-nowrap text-sm font-bold text-gray-900">2. Exportation</td>
-                            <td class="px-6 py-4 text-sm text-gray-700">Export en .png vers Antigravity</td>
+                            <td class="px-6 py-4 text-sm text-gray-700 wrap-text"><strong>J'exporte en fichier .png dans mon projet d'Antigravity</strong></td>
                             <td class="px-6 py-4 text-sm text-gray-400 italic">(Aucune action)</td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-right font-medium text-gray-600">15 secs</td>
                         </tr>
                     </tbody>
                     <tfoot class="bg-purple-50">
                         <tr>
-                            <td colspan="3" class="px-6 py-3 text-right text-sm font-bold text-purple-900 uppercase">Total Nano Banana</td>
+                            <td colspan="3" class="px-6 py-3 text-right text-sm font-bold text-purple-900 uppercase">Total Nano banana</td>
                             <td class="px-6 py-3 text-right text-sm font-bold text-purple-900">~ 3 min</td>
                         </tr>
                     </tfoot>
