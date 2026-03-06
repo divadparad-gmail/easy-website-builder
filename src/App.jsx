@@ -8,6 +8,7 @@ import StepSections from './components/StepSections';
 import StepCTA from './components/StepCTA';
 import PromptOutput from './components/PromptOutput';
 import CTAFooter from './components/CTAFooter';
+import ScrollSpy from './components/ScrollSpy';
 import { defaultSections, styleOptions } from './data/constants';
 import { generatePrompt } from './utils/promptGenerator';
 
@@ -46,31 +47,45 @@ export default function App() {
 
   return (
     <div className="min-h-screen flex flex-col items-center py-12 px-4 md:px-0">
+      <ScrollSpy />
+
       <HeroHeader />
 
       <main className="w-full max-w-2xl space-y-24 pb-24">
-        <StepDescription value={description} onChange={setDescription} />
+        <div id="step-1">
+          <StepDescription value={description} onChange={setDescription} />
+        </div>
 
-        <StepBusiness
-          selected={selectedBusiness}
-          onSelect={handleBusinessSelect}
-          customValue={customBusiness}
-          onCustomChange={handleCustomBusinessChange}
-        />
+        <div id="step-2">
+          <StepBusiness
+            selected={selectedBusiness}
+            onSelect={handleBusinessSelect}
+            customValue={customBusiness}
+            onCustomChange={handleCustomBusinessChange}
+          />
+        </div>
 
-        <StepStyle
-          selectedId={selectedStyleId}
-          onSelect={setSelectedStyleId}
-        />
+        <div id="step-3">
+          <StepStyle
+            selectedId={selectedStyleId}
+            onSelect={setSelectedStyleId}
+          />
+        </div>
 
-        <StepSections
-          sections={sections}
-          onSectionsChange={setSections}
-        />
+        <div id="step-4">
+          <StepSections
+            sections={sections}
+            onSectionsChange={setSections}
+          />
+        </div>
 
-        <StepCTA value={ctaText} onChange={setCtaText} />
+        <div id="step-5">
+          <StepCTA value={ctaText} onChange={setCtaText} />
+        </div>
 
-        <PromptOutput prompt={prompt} />
+        <div id="step-prompt">
+          <PromptOutput prompt={prompt} />
+        </div>
 
         <CTAFooter />
       </main>
