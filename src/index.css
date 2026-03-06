@@ -333,11 +333,13 @@ html[data-theme='light'] {
 /* On "dé-inverse" les images (comme l'avatar), les vidéos et certains éléments pour qu'ils 
    conservent leurs couleurs naturelles exactes */
 html img,
-html video {
+html video,
+html .theme-preserve {
   transition: filter 0.6s ease-in-out;
 }
 
 html[data-theme='light'] img,
-html[data-theme='light'] video {
+html[data-theme='light'] video,
+html[data-theme='light'] .theme-preserve {
   filter: invert(1) hue-rotate(180deg);
 }

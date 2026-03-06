@@ -14,7 +14,7 @@ export default function ThemeToggle() {
     return (
         <button
             onClick={() => setIsLight(!isLight)}
-            className="fixed top-6 right-6 z-50 theme-preserve transition-all duration-700 ease-out transform hover:scale-[1.02] hover:-translate-y-0.5 active:scale-95 cursor-pointer outline-none drop-shadow-[0_0_15px_rgba(255,255,255,0.05)]"
+            className="fixed top-6 right-6 z-50 theme-preserve transition-all duration-1000 ease-in-out transform hover:scale-[1.01] hover:-translate-y-[1px] active:scale-95 cursor-pointer outline-none drop-shadow-[0_0_15px_rgba(255,255,255,0.05)]"
         >
             <div className={`relative w-[110px] h-[46px] rounded-full border border-white/20 overflow-hidden shadow-[inset_0_5px_8px_rgba(0,0,0,0.35),0_3px_8px_rgba(0,0,0,0.2)] transition-colors duration-700 ease-in-out
                 ${isLight ? 'bg-gradient-to-r from-[#ffd34d] to-[#8db1d8]' : 'bg-gradient-to-r from-[#212739] to-[#3f4a61]'}`}>
