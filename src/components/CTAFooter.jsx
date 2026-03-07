@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export default function CTAFooter() {
     return (
-        <section className="text-center space-y-8 pt-12 animate-fade-up" id="cta-section">
+        <section className="text-center space-y-8 pt-12 animate-fade-up w-full" id="cta-footer">
             <p className="text-xs text-gray-400 font-medium">
                 Collez dans{' '}
                 <span className="text-white font-semibold">
