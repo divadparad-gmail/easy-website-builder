@@ -2,7 +2,7 @@ export default function HeroHeader() {
     return (
         <header className="text-center mb-16 max-w-2xl mx-auto animate-fade-up">
             <div className="flex justify-center mb-6">
-                <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-white shadow-[0_0_35px_rgba(192,132,252,0.8),inset_0_0_15px_rgba(192,132,252,0.4)]">
+                <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-white shadow-[0_0_35px_rgba(192,132,252,0.8),inset_0_0_15px_rgba(192,132,252,0.4)] theme-preserve">
                     <img
                         alt="David Paradis"
                         className="w-full h-full object-cover scale-125 transition-transform duration-500 hover:scale-110"

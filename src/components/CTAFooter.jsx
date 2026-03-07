@@ -44,16 +44,11 @@ export default function CTAFooter() {
                                     🚀
                                 </div>
                             </div>
-                            <div className="relative h-32 w-32 rounded-full overflow-hidden">
-                                <div className="absolute inset-0 shadow-[inset_0_0_20px_20px_rgba(0,0,0,0.5)] z-10" />
+                            <div className="w-32 h-32 rounded-full overflow-hidden border-2 border-transparent border-white/80 shadow-[0_0_35px_rgba(192,132,252,0.6),inset_0_0_15px_rgba(192,132,252,0.4)] theme-preserve">
                                 <img
                                     alt="David Paradis"
-                                    className="h-full w-full object-cover"
+                                    className="h-full w-full object-cover scale-125 transition-transform duration-500 hover:scale-110"
                                     src="/logo_david.png"
-                                    style={{
-                                        maskImage: 'radial-gradient(circle, black 70%, transparent 100%)',
-                                        WebkitMaskImage: 'radial-gradient(circle, black 70%, transparent 100%)'
-                                    }}
                                 />
                             </div>
                         </div>
